@@ -1,0 +1,244 @@
+/* 1. Transition-based Animations */
+.hover-effect {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .hover-effect:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  
+  /* 2. Keyframe-based Animations */
+  /* Fade In / Fade Out */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Slide In / Slide Out */
+  @keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+  .slide-in {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  /* 3. Scaling Animations */
+  /* Zoom In / Zoom Out */
+  @keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  .zoom-in {
+    animation: zoomIn 1s ease-in-out;
+  }
+  
+  /* 4. Movement Animations */
+  /* Slide Up / Slide Down */
+  @keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+  .slide-up {
+    animation: slideUp 1s ease-out;
+  }
+  
+  /* 5. Rotation Animations */
+  /* Rotate */
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .rotate {
+    animation: rotate 2s linear infinite;
+  }
+  
+  /* 6. Bounce Animations */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  .bounce {
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+  /* 7. Shaking Animations */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-50px); }
+    50% { transform: translateX(50px); }
+    75% { transform: translateX(-50px); }
+    100% { transform: translateX(0); }
+  }
+  .shake {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  /* 8. Pulse Animations */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  .pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  /* 9. Text Animations */
+  /* Text Color Change */
+  @keyframes textColorChange {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: green; }
+  }
+  .text-color-change {
+    animation: textColorChange 3s infinite;
+  }
+  
+  /* Text Shadow Animation */
+  @keyframes textShadow {
+    0% { text-shadow: 0 0 5px red; }
+    50% { text-shadow: 0 0 20px blue; }
+    100% { text-shadow: 0 0 5px red; }
+  }
+  .text-shadow {
+    animation: textShadow 2s infinite;
+  }
+  
+  /* 10. Flashing Animations */
+  @keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  .flash {
+    animation: flash 1s ease-in-out infinite;
+  }
+  
+  /* 11. Background Animation */
+  @keyframes backgroundMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .background-animate {
+    animation: backgroundMove 3s linear infinite;
+    background: linear-gradient(270deg, red, blue);
+    background-size: 400% 400%;
+  }
+  
+  /* 12. Wave Animations */
+  @keyframes wave {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  .wave {
+    animation: wave 1s infinite;
+  }
+  
+  /* 13. Custom Easing Functions */
+  @keyframes customEase {
+    from { transform: translateX(0); }
+    to { transform: translateX(100px); }
+  }
+  .custom-easing {
+    animation: customEase 2s cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  
+  /* 14. Alternating Animations */
+  @keyframes alternate {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .alternate {
+    animation: alternate 2s ease-in-out infinite alternate;
+  }
+  
+  /* 15. Infinite Loop Animations */
+  .infinite-loop {
+    animation: rotate 2s infinite;
+  }
+  
+ /* Keyframe for Background Image Change */
+@keyframes backgroundImageChange {
+    0% {
+      background-image: url('/home.webp');
+    }
+    60% {
+      background-image: url('/image2.png');
+    }
+    100% {
+      background-image: url('/image.png');
+    }
+  }
+  
+  /* Apply the animation */
+  .background-change {
+    animation: backgroundImageChange 10s infinite; /* 10s duration with infinite looping */
+    height: 100vh; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+  }
+
+ 
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  
+  @keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+  
+  @keyframes slideOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+  }
+  
+  .slide-in {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .slide-out {
+    animation: slideOut 1s ease-in-out;
+  }
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .shake {
+    animation: shake 0.5s ease-in-out;
+  }
+  @keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .flash {
+    animation: flash 1s ease-in-out infinite;
+  }
+  
+
+
+  @keyframes flip {
+    from { transform: rotateX(0); }
+    to { transform: rotateX(180deg); }
+  }
+  .flip {
+    animation: flip 1s ease-in-out;
+  }
+  

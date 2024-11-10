@@ -1,0 +1,138 @@
+.reviews-section {
+    background-color: #f8f8f8;
+    padding: 4rem 0;
+  }
+  
+  .reviews-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .reviews-header {
+    font-size: 2.5rem;
+    font-weight: 800;
+    animation: shake 0.5s ease-in-out;
+    
+    margin-bottom: 3rem;
+  }
+  
+  .reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .review-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .review-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .review-star {
+    color: #f4b400;
+    margin-bottom: 1rem;
+  }
+  
+  .star-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .review-text {
+    font-size: 1.125rem;
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+  }
+  
+  .review-author {
+    font-weight: bold;
+    
+  }
+  
+  .review-location {
+    color: #7a7a7a;
+    font-size: 0.875rem;
+  }
+  
+  .review-form-container {
+    margin-top: 4rem;
+  }
+  
+  .review-form-header {
+    font-size: 2.5rem;
+    font-weight: 600;
+        margin-bottom: 2rem;
+        animation: shake 0.5s ease-in-out;
+        font-family: sans-serif;
+  }
+  
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    
+  }
+  
+  .form-input {
+    padding: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+  }
+  
+  .form-submit {
+    text-align: center;
+  }
+  
+  .submit-btn {
+    background-color: #ffebcd;
+        color: #b91c1c;
+        padding: 0.4rem 1.2rem;
+        border: 2px solid #b91c1c;
+    
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  .submit-btn:hover {
+    background-color: #b91c1c;
+    color: aliceblue;
+  }
+  
+  .success-message {
+    margin-top: 2rem;
+    color: #2a6d45;
+    font-weight: bold;
+  }
+  .reviews-container h2 {
+    margin-top: 2cm;
+    font-family: serif;
+  }
